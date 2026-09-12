@@ -1,13 +1,207 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hellow World</title>
-    <link rel = "stylesheet" href="style.css">
+    <title>Hello World</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            text-align: center;
+        }
+
+        header {
+            background: #24292f;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .flower {
+            width: 100%;
+            max-width: 460px;
+            border-radius: 12px;
+        }
+
+        /* Custom icons */
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        .circle {
+            background: #3498db;
+            border-radius: 50%;
+        }
+
+        .square {
+            background: #e74c3c;
+            border-radius: 12px;
+        }
+
+        .diamond {
+            background: #9b59b6;
+            transform: rotate(45deg);
+        }
+
+        .diamond span {
+            transform: rotate(-45deg);
+        }
+
+        /* Triangle */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 45px solid transparent;
+            border-right: 45px solid transparent;
+            border-bottom: 80px solid #f39c12;
+        }
+
+        /* Trigonometric wave */
+        .wave {
+            height: 150px;
+            background: #111827;
+            overflow: hidden;
+            position: relative;
+            border-radius: 15px;
+        }
+
+        .wave::before {
+            content: "∿ ∿ ∿ ∿ ∿ ∿ ∿ ∿ ∿";
+            position: absolute;
+            width: 100%;
+            top: 35px;
+            left: 0;
+            color: #00ffcc;
+            font-size: 70px;
+            letter-spacing: 5px;
+        }
+
+        .math {
+            font-size: 28px;
+            color: #3498db;
+            margin: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #24292f;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>This is git sample folder</h1>
-    <div><img src='flower.png' alt = "sample flower" style = "width:100%; max-width:460px"></div>
-    <p>Learning git is essential.</p>
-    <p>The First File in the git repo.</p>
+
+    <header>
+        <h1>Hello World 👋</h1>
+        <p>Learning Git with HTML & CSS</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>🌸 My Git Project</h2>
+
+            <img src="flower.png"
+                 alt="Sample flower"
+                 class="flower">
+
+            <p>Learning Git is essential.</p>
+            <p>This is the first file in my Git repository.</p>
+        </div>
+
+        <div class="card">
+            <h2>Custom Shapes & Icons</h2>
+
+            <div class="icons">
+
+                <div class="icon circle">
+                    ★
+                </div>
+
+                <div class="icon square">
+                    ♥
+                </div>
+
+                <div class="icon diamond">
+                    <span>◆</span>
+                </div>
+
+                <div class="triangle"></div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📐 Trigonometric Shape</h2>
+
+            <p class="math">
+                sin(x) + cos(x)
+            </p>
+
+            <div class="wave"></div>
+
+            <p>
+                A simple visual representation of a trigonometric wave.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Git Practice</h2>
+
+            <p>
+                Create → Add → Commit → Push
+            </p>
+
+            <p>
+                Keep learning and experimenting!
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        Git Sample Project © 2026
+    </footer>
+
 </body>
 </html>
